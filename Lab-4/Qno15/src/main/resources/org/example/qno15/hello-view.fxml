@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ToggleGroup?>
+
+<VBox alignment="CENTER" spacing="15.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.qno15.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <!-- MenuBar -->
+    <MenuBar>
+        <Menu text="File">
+            <MenuItem text="Open" fx:id="openMenuItem" onAction="#onOpenFileClick"/>
+            <MenuItem text="Exit" fx:id="exitMenuItem" onAction="#onExitMenuClick"/>
+        </Menu>
+    </MenuBar>
+
+    <!-- Label -->
+    <Label text="Welcome to JavaFX Application!" fx:id="welcomeText"/>
+
+    <!-- TextField -->
+    <TextField fx:id="textField" promptText="Enter something here..."/>
+
+    <!-- Button -->
+    <Button text="Submit" onAction="#onSubmitButtonClick">
+        <tooltip>
+            <Tooltip text="Click to submit"/>
+        </tooltip>
+    </Button>
+
+    <!-- RadioButtons -->
+    <RadioButton text="Option 1" fx:id="radioButton1"/>
+    <RadioButton text="Option 2" fx:id="radioButton2"/>
+
+    <!-- CheckBox -->
+    <CheckBox text="Accept Terms" fx:id="acceptTermsCheckBox"/>
+
+    <!-- Hyperlink -->
+    <Hyperlink text="Click here for more info" onAction="#onHyperlinkClick"/>
+
+</VBox>

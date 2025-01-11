@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Calculator</title>
+</head>
+<body>
+    <h2>Simple Interest Calculator</h2>
+    <form action="calculateInterest" method="post">
+        <label for="principal">Principal (P):</label>
+        <input type="number" id="principal" name="principal" required><br><br>
+
+        <label for="rate">Rate of Interest (R):</label>
+        <input type="number" step="0.01" id="rate" name="rate" required><br><br>
+
+        <label for="time">Time (T in years):</label>
+        <input type="number" id="time" name="time" required><br><br>
+
+        <input type="submit" value="Calculate Interest">
+    </form>
+</body>
+</html>
